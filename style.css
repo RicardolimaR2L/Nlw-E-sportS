@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:#121214;
+  background-image:url(assets/bg.jpg);
+  background-position: top center;
+background-repeat: no-repeat;
+}
+
+/* Background da section pra fazer as bordas em gradient*/
+/* não conseguimos usar border pra fazer gradient  pra isso usamos o   
+   Background image dentro de uma div*/
+section{
+  background-image:linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  background-color: rgba(42, 38, 52, 1);
+  padding-top: 4px;
+}
+
+section div{
+  background-color: rgba(42, 38, 52, 1);
+  padding:32px;
+  padding-top: 24px;
+  border-radius: 8px;
+}
+
+
+/*HEADER*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 580px;
+  height: 120px;
+  margin-bottom: 32px;
+  margin-top:100px;
+  position:relative;
+}
+header img {
+  height: 100px;
+width: 100px;
+border-radius: 60%;
+  border-radius: 50%; 
+}
+/*FALTA COLOCAR A BORDA NA IMAGEM EM LINEAR GRADIENTE e A BORDA DOS CARDS*/
+
+  header figure div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+}
+
+/*MAIN*/
+
+main {
+  height: 854px;
+  width: 580px;
+  left: 310px;
+  top: 32px;
+  border-radius: 0px;
+}
+
+/*section games*/
+.games {
+  background-color: rgba(42, 38, 52, 1);
+
+  gap: 24px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+main .games ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /*vai criar outra linha caso precise */
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+main .games img {
+  width: 120px;
+  height: 130px;
+  border-radius: 5px;
+}
+
+p {
+  font-family: 'inter';
+  color: lightgrey;
+letter-spacing: -0.18px;
+}
+h3 {
+  font-family: 'inter', sans-serif;
+  font-weight: 900;
+  list-style: 160%;
+  font-size: 24px;
+  letter-spacing: -0.47px;
+}
+
+/*section chanels*/
+.channels {
+  background-color: rgba(42, 38, 52, 1);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 22px;
+}
+
+.channels ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.channels img {
+  width: 50px;
+  border-radius: 55px;
+}
+
+.channels p {
+  margin-bottom: 24px;
+}
+
+/*section links*/
+
+.social-links {
+  background-color: rgba(42, 38, 52, 1);
+  gap: 24px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.social-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-links p {
+  margin-bottom: 24px;
+}
