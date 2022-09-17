@@ -14,9 +14,6 @@ body {
 background-repeat: no-repeat;
 }
 
-/* Background da section pra fazer as bordas em gradient*/
-/* não conseguimos usar border pra fazer gradient  pra isso usamos o   
-   Background image dentro de uma div*/
 section{
   background-image:linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
   background-color: rgba(42, 38, 52, 1);
@@ -70,7 +67,8 @@ header div:hover{
 
 main {
   height: 854px;
-  width: 580px;
+  max-width: 580px;
+  width: 90%;
   left: 310px;
   top: 32px;
   border-radius: 0px;
