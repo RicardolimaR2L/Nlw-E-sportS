@@ -104,7 +104,7 @@ main .games ul {
   flex-wrap: nowrap;
   margin-top: 24px;
   margin-bottom: 32px;
-  gap:10px;
+  gap: 10px;
 }
 main .games img {
   width: 120px;
