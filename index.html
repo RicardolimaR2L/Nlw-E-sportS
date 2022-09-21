@@ -11,6 +11,11 @@
       href="https: //fonts.googleapis.com/css2? família= Inter:wght@400;900 & display=swap"
       rel="stylesheet"
     />
+    <!--link swiper e css--->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <title>Nlw E-sportS</title>
   </head>
   <body>
@@ -27,12 +32,14 @@
       </figure>
     </header>
     <main>
+
       <section class="games">
         <div>
           <h3>meus jogos</h3>
           <p>jogos que eu mais curto jogar!</p>
-          <ul>
-            <li>
+          <div class="swiper mySwiper">
+          <ul class="games-list swiper-wrapper">
+            <li class="swiper-slide">
               <a
                 href="https://battlelog.battlefield.com/bf4/gate/ "
                 target="_blank"
@@ -41,14 +48,14 @@
                   alt="capa batlefield 4"
               /></a>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a href="https://nba.2k.com/pt-BR/" target="_blank"
                 ><img
                   src="https://oyster.ignimgs.com/wordpress/stg.ign.com/2019/07/2KSMKT_NBA2K20_LE_AG_FOB.jpg"
                   alt="capa nba2k20"
               /></a>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a
                 href="https://elderscrolls.bethesda.net/pt/skyrim"
                 target="_blank"
@@ -57,7 +64,7 @@
                   alt="capa skyrim"
               /></a>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a
                 href="https://store.ubi.com/ofertas/game?lang=pt_BR&pid=57615162a3be1683708b4586&dwvar_57615162a3be1683708b4586_Platform=pcdl&edition=Standard%20Edition&source=detail"
                 target="_blank"
@@ -68,7 +75,7 @@
                 />
               </a>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a
                 href="https://store.ubi.com/ofertas/game?lang=pt_BR&pid=56c4947a88a7e300458b45e2&dwvar_56c4947a88a7e300458b45e2_Platform=pcdl&edition=Standard%20Edition&source=detail"
               >
@@ -77,7 +84,14 @@
                   alt="capa far cry 4"
               /></a>
             </li>
+            <li class="swiper-slide">
+              <a href="https://www.ea.com/pt-br/games/battlefield/battlefield-bad-company-2" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/e/e1/Battlefield_Bad_Company_2_capa.png" alt="">
+              </a>
+
+            </li>
           </ul>
+          </div>
         </div>
       </section>
       <section class="channels">
@@ -168,5 +182,13 @@
         </div>
       </section>
     </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+       new Swiper(".mySwiper", {
+        slidesPerView:3,
+        loop: true
+       });
+    </script>
   </body>
 </html>
