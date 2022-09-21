@@ -8,57 +8,61 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color:#121214;
-  background-image:url(assets/bg.jpg);
+  background-color: #121214;
+  background-image: url(assets/bg.jpg);
   background-position: top center;
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
-section{
-  background-image:linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+section {
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
   background-color: rgba(42, 38, 52, 1);
   padding-top: 4px;
 }
 
-section div{
+section div {
   background-color: rgba(42, 38, 52, 1);
-  padding:32px;
+  padding: 32px;
   padding-top: 24px;
   border-radius: 8px;
 }
-
 
 /*HEADER*/
 
 header {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   width: 580px;
   height: 120px;
   margin-bottom: 32px;
-  margin-top:100px;
-  position:relative;
+  margin-top: 100px;
+  position: relative;
 }
 header img {
   height: 100px;
-width: 100px;
-border-radius: 60%;
-  border-radius: 50%; 
+  width: 100px;
+  border-radius: 60%;
+  border-radius: 50%;
 }
-  header figure div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header figure div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 110px;
   height: 110px;
   border-radius: 100%;
-  background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
-  transition: transform .3s;
+  background: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+  transition: transform 0.3s;
   cursor: pointer;
 }
 
-header div:hover{
+header div:hover {
   transform: scale(1.1);
   /*usado para aumentar o tamanho quando o mouse passar por cima */
 }
@@ -67,7 +71,7 @@ header div:hover{
 
 main {
   height: 854px;
-  max-width: 580px;
+  max-width: 450px;
   width: 90%;
   left: 310px;
   top: 32px;
@@ -76,14 +80,13 @@ main {
 
 /*Usado para aumentar o tamanho  quando o mouse passar por cima dos itens da lista dando o efeito de card animado */
 
-section ul li{
-transition: transform .3s;
+section ul li {
+  transition: transform 0.3s;
 }
 
-section ul li:hover{
-transform: scale(1.1);
+section ul li:hover {
+  transform: scale(1.1);
 }
-
 
 /*section games*/
 .games {
@@ -93,15 +96,15 @@ transform: scale(1.1);
   color: white;
   border-radius: 8px;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 main .games ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  /*vai criar outra linha caso precise */
-  gap: 16px;
+  flex-wrap: nowrap;
   margin-top: 24px;
   margin-bottom: 32px;
+  gap:0;
 }
 main .games img {
   width: 120px;
@@ -112,7 +115,7 @@ main .games img {
 p {
   font-family: 'inter';
   color: lightgrey;
-letter-spacing: -0.18px;
+  letter-spacing: -0.18px;
 }
 h3 {
   font-family: 'inter', sans-serif;
@@ -140,7 +143,7 @@ h3 {
 .channels img {
   width: 50px;
   border-radius: 55px;
-  border:2px solid rgb(60, 56, 72); 
+  border: 2px solid rgb(60, 56, 72);
 }
 
 .channels p {
@@ -168,43 +171,50 @@ h3 {
   margin-bottom: 24px;
 }
 
-
 /*animações*/
 
-header div{
-  animation: fromtop.7s .1s backwards;
+header div {
+  animation: fromtop.7s 0.1s backwards;
 }
-@keyframes fromtop{
-  from{
+@keyframes fromtop {
+  from {
     opacity: 0;
-    transform: translatey(-30px)}
+    transform: translatey(-30px);
+  }
 
-  to{ 
+  to {
     opacity: 1;
-    transform:translatey(0)}
+    transform: translatey(0);
+  }
 }
 
-main section{
+main section {
   animation: frombottom.7s backwards;
   /*backwards serve para 'puxar as propriedades já passadas no keyframe' */
 }
 
-main section:nth-child(1){
-animation-delay: 0;
+main section:nth-child(1) {
+  animation-delay: 0;
 }
-main section:nth-child(2){
-  animation-delay: .4s;
-  }
-  main section:nth-child(3){
-    animation-delay: .8s;
-    }
+main section:nth-child(2) {
+  animation-delay: 0.4s;
+}
+main section:nth-child(3) {
+  animation-delay: 0.8s;
+}
 
-@keyframes frombottom{
-  from{
+@keyframes frombottom {
+  from {
     opacity: 0;
-    transform: translatey(30px)}
+    transform: translatey(30px);
+  }
 
-  to{ 
+  to {
     opacity: 1;
-    transform:translatey(0)}
+    transform: translatey(0);
+  }
+}
+
+/*swiper*/
+section ul {
 }
